@@ -1,0 +1,674 @@
+fileFormatVersion: 2
+guid: 78a5055d8b327ce46a4c2db990b04c18
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NewSpriteSheet4_0
+    21300002: NewSpriteSheet4_1
+    21300004: NewSpriteSheet4_2
+    21300006: NewSpriteSheet4_3
+    21300008: NewSpriteSheet4_4
+    21300010: NewSpriteSheet4_5
+    21300012: NewSpriteSheet4_6
+    21300014: NewSpriteSheet4_7
+    21300016: NewSpriteSheet4_8
+    21300018: NewSpriteSheet4_9
+    21300020: NewSpriteSheet4_10
+    21300022: NewSpriteSheet4_11
+    21300024: NewSpriteSheet4_12
+    21300026: NewSpriteSheet4_13
+    21300028: NewSpriteSheet4_14
+    21300030: NewSpriteSheet4_15
+    21300032: NewSpriteSheet4_16
+    21300034: NewSpriteSheet4_17
+    21300036: NewSpriteSheet4_18
+    21300038: NewSpriteSheet4_19
+    21300040: NewSpriteSheet4_20
+    21300042: NewSpriteSheet4_21
+    21300044: NewSpriteSheet4_22
+    21300046: NewSpriteSheet4_23
+    21300048: NewSpriteSheet4_24
+    21300050: NewSpriteSheet4_25
+    21300052: NewSpriteSheet4_26
+    21300054: NewSpriteSheet4_27
+    21300056: NewSpriteSheet4_28
+    21300058: NewSpriteSheet4_29
+    21300060: NewSpriteSheet4_30
+    21300062: NewSpriteSheet4_31
+    21300064: NewSpriteSheet4_32
+    21300066: NewSpriteSheet4_33
+    21300068: NewSpriteSheet4_34
+    21300070: NewSpriteSheet4_35
+    21300072: NewSpriteSheet4_36
+    21300074: NewSpriteSheet4_37
+    21300076: NewSpriteSheet4_38
+    21300078: NewSpriteSheet4_39
+    21300080: NewSpriteSheet4_40
+    21300082: NewSpriteSheet4_41
+    21300084: NewSpriteSheet4_42
+    21300086: NewSpriteSheet4_43
+    21300088: NewSpriteSheet4_44
+    21300090: NewSpriteSheet4_45
+    21300092: NewSpriteSheet4_46
+    21300094: NewSpriteSheet4_47
+    21300096: NewSpriteSheet4_48
+    21300098: NewSpriteSheet4_49
+    21300100: NewSpriteSheet4_50
+    21300102: NewSpriteSheet4_51
+    21300104: NewSpriteSheet4_52
+    21300106: NewSpriteSheet4_53
+    21300108: NewSpriteSheet4_54
+    21300110: NewSpriteSheet4_55
+    21300112: NewSpriteSheet4_56
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: NewSpriteSheet4_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 907
+        width: 68
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 903
+        width: 60
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 903
+        width: 59
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 903
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_4
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 903
+        width: 66
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_5
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 903
+        width: 59
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 907
+        width: 58
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_7
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 903
+        width: 59
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_8
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 903
+        width: 65
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 776
+        width: 51
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_10
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 778
+        width: 45
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 776
+        width: 42
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 778
+        width: 39
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 778
+        width: 57
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_14
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 776
+        width: 49
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_15
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 776
+        width: 47
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_16
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 776
+        width: 61
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_17
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 776
+        width: 60
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_18
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 637
+        width: 50
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_19
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 637
+        width: 51
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 728
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_21
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 725
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_22
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 723
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_23
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 702
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_24
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 706
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_25
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 675
+        width: 60
+        height: 20
+      alignment: 9
+      pivot: {x: .0618555695, y: .758578479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_26
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 659
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_27
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 637
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_28
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 637
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_29
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 564
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_30
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 564
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_31
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 518
+        width: 51
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_32
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 518
+        width: 50
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_33
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 583
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_34
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 545
+        width: 165
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_35
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 545
+        width: 133
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 518
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_37
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 519
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_38
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 403
+        width: 265
+        height: 156
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_39
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 394
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_40
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 399
+        width: 59
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_41
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 403
+        width: 58
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_42
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 399
+        width: 59
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_43
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 399
+        width: 66
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_44
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 399
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_45
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 399
+        width: 57
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_46
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 399
+        width: 62
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_47
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 284
+        width: 60
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_48
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 285
+        width: 61
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 284
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_50
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 284
+        width: 49
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_51
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 287
+        width: 57
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_52
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 287
+        width: 39
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_53
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 287
+        width: 41
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_54
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 287
+        width: 46
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_55
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 284
+        width: 51
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NewSpriteSheet4_56
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 28
+        width: 353
+        height: 235
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
