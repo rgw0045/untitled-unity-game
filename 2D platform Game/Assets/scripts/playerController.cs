@@ -34,8 +34,8 @@ public class playerController : MonoBehaviour {
 		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
 
 		//cant move while jumping
-		if (!grounded)
-			return;
+		//if (!grounded)
+		//	return;
 
 		//gets input to move the character
 		float move = Input.GetAxis ("Horizontal");
