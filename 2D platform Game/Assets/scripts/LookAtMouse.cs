@@ -3,14 +3,32 @@ using System.Collections;
 
 public class LookAtMouse : MonoBehaviour {
 
-	public float rotationOffset = 10.0f;
+	public float rotationOffset;
+	public GameObject player;
+	float mouseX;
+	float mouseY;
+	float mouseZ;
+	Vector3 Mouse;
 
 	// Update is called once per frame
 	void Update () {
-		Vector3 difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - transform.position;
+		mouseX = Mathf.Abs(Input.mousePosition.x);
+		mouseY = Mathf.Abs(Input.mousePosition.y);
+		mouseZ = Mathf.Abs (Input.mousePosition.z);
+		 
+		Mouse = new Vector3 (mouseX, mouseY, mouseZ);
+
+		Vector3 difference = Camera.main.ScreenToWorldPoint (Mouse) - transform.position;
 		difference.Normalize ();
 
 		float rotateZ = Mathf.Atan2 (difference.y, difference.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler (0f, 0f, rotateZ * rotationOffset);
+
+		if ((rotateZ * rotationOffset) > 90)
+						transform.rotation = Quaternion.Euler (0f, 0f, 90f);
+		else if ((rotateZ * rotationOffset) < -40)
+						transform.rotation = Quaternion.Euler (0f, 0f, -40f);
+		else
+		     transform.rotation = Quaternion.Euler (0f, 0f, rotateZ * rotationOffset);
+
 	}
 }

@@ -41,17 +41,17 @@ public class playerController : MonoBehaviour {
 		float move = Input.GetAxis ("Horizontal");
 
 		//gets the speed for the animator
-		anim.SetFloat ("speed", Mathf.Abs (move));
+		anim.SetFloat ("speed", move);
 
 		//moves charactor
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 		//if moving left and not facing right, flip
 		if (move > 0 && !facingRight) {
-			Flip ();
+			//Flip ();
 		}
 		//if moving left and not facing left, flip
 		else if (move < 0 && facingRight) {
-			Flip ();
+			//Flip ();
 		}
 	}
 
@@ -67,11 +67,11 @@ public class playerController : MonoBehaviour {
 
 	}
 	//function to flip the walking animation
-	void Flip() {
+	/*void Flip() {
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
-	}
+	}*/
 
 }
