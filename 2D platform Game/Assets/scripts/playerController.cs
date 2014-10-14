@@ -6,6 +6,12 @@ public class playerController : MonoBehaviour {
 	public float maxSpeed = 10f;
 	bool facingRight = true;
 
+
+	public GameObject shot;
+	public Transform shotSpawn;
+	public float fireRate;
+	private float nextFire;
+
 	Animator anim;
 
 	//variables to fall
@@ -65,6 +71,10 @@ public class playerController : MonoBehaviour {
 				doubleJump = true;
 		}
 
+		if (Input.GetButton("Fire1") && Time.time > nextFire) {
+			nextFire = Time.time + fireRate;
+			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+	    }
 	}
 	//function to flip the walking animation
 	/*void Flip() {
@@ -73,5 +83,5 @@ public class playerController : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}*/
-
+	
 }

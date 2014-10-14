@@ -1,7 +1,8 @@
 fileFormatVersion: 2
 guid: 5b41fe6fe6139004f880f52e87ff6802
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: city_background_night
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

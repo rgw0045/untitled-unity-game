@@ -1,7 +1,8 @@
 fileFormatVersion: 2
 guid: 0f9eee2bfb420e141aa7411dcd43e2ef
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Right2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
