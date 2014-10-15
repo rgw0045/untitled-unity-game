@@ -6,7 +6,6 @@ public class playerController : MonoBehaviour {
 	public float maxSpeed = 10f;
 	bool facingRight = true;
 
-
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate;
