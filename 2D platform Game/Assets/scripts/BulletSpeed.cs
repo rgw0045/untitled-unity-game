@@ -17,7 +17,7 @@ public class BulletSpeed : MonoBehaviour {
 
 		Vector3 difference = Camera.main.ScreenToWorldPoint (Mouse) - transform.position;
 
-		rigidbody2D.AddForce(new Vector2(difference.x * speed, difference.y * speed));
+		  rigidbody2D.AddForce(new Vector2(difference.x * speed, difference.y * speed));
 	}
 
 }
