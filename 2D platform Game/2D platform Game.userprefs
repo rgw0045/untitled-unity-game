@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\playerController.cs">
     <Files>
-      <File FileName="Assets\scripts\BulletSpeed.cs" Line="7" Column="27" />
-      <File FileName="Assets\scripts\playerController.cs" Line="87" Column="1" />
-      <File FileName="Assets\scripts\LookAtMouse.cs" Line="23" Column="3" />
+      <File FileName="Assets\scripts\BulletSpeed.cs" Line="19" Column="45" />
+      <File FileName="Assets\scripts\playerController.cs" Line="108" Column="3" />
+      <File FileName="Assets\scripts\LookAtMouse.cs" Line="26" Column="60" />
+      <File FileName="Assets\scripts\CameraController.cs" Line="12" Column="70" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

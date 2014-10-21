@@ -6,6 +6,12 @@ public class playerController : MonoBehaviour {
 	public float maxSpeed = 10f;
 	bool facingRight = true;
 
+	public GameObject arm;
+	float mouseX;
+	float mouseY;
+	float mouseZ;
+	Vector3 Mouse;
+
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate;
@@ -50,13 +56,16 @@ public class playerController : MonoBehaviour {
 
 		//moves charactor
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+
+		mouseX = Camera.main.ScreenToWorldPoint (Input.mousePosition).x - transform.position.x;
+
 		//if moving left and not facing right, flip
-		if (move > 0 && !facingRight) {
-			//Flip ();
+		if (mouseX > 0 && !facingRight) {
+			Flip ();
 		}
 		//if moving left and not facing left, flip
-		else if (move < 0 && facingRight) {
-			//Flip ();
+		else if (mouseX < 0 && facingRight) {
+			Flip ();
 		}
 	}
 
@@ -72,16 +81,30 @@ public class playerController : MonoBehaviour {
 
 		if (Input.GetButton("Fire1") && Time.time > nextFire) {
 
-			nextFire = Time.time + fireRate;
-			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+
+			mouseX = Input.mousePosition.x;
+			mouseY = Input.mousePosition.y;
+			mouseZ = Input.mousePosition.z;
+			
+			Mouse = new Vector3 (mouseX, mouseY, mouseZ);
+			
+			Vector3 difference = Camera.main.ScreenToWorldPoint (Mouse) - transform.position;
+			difference.Normalize ();
+			
+			float angle = Mathf.Atan2 (difference.y, difference.x) * Mathf.Rad2Deg;
+
+			if ((angle > -40 && angle < 60) || (angle > 120 || angle < -140)) {
+			  nextFire = Time.time + fireRate;
+			  Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+			}
 	    }
 	}
 	//function to flip the walking animation
-	/*void Flip() {
+	void Flip() {
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
-	}*/
+	}
 	
 }
