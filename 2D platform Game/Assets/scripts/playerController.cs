@@ -105,6 +105,11 @@ public class playerController : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+
+		theScale = arm.transform.localScale;
+		theScale.x *= -1;
+		theScale.y *= -1;
+		arm.transform.localScale = theScale;
 	}
 	
 }

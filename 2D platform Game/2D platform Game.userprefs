@@ -1,11 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\playerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\LookAtMouse.cs">
     <Files>
+      <File FileName="Assets\scripts\LookAtMouse.cs" Line="33" Column="7" />
       <File FileName="Assets\scripts\BulletSpeed.cs" Line="19" Column="45" />
-      <File FileName="Assets\scripts\playerController.cs" Line="108" Column="3" />
-      <File FileName="Assets\scripts\LookAtMouse.cs" Line="26" Column="60" />
-      <File FileName="Assets\scripts\CameraController.cs" Line="12" Column="70" />
+      <File FileName="Assets\scripts\playerController.cs" Line="63" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
