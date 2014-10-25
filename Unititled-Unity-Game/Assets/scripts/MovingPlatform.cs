@@ -22,11 +22,11 @@ public class MovingPlatform : MonoBehaviour {
 
 		if (Switch) 
 		{
-			transform.position = Vector3.MoveTowards (transform.position, Origin.position, speed);
+			transform.position = Vector2.MoveTowards (transform.position, Origin.position, speed);
 		} 
 		else 
 		{
-			transform.position = Vector3.MoveTowards(transform.position, Destination.position, speed);
+			transform.position = Vector2.MoveTowards(transform.position, Destination.position, speed);
 		}
 
 
