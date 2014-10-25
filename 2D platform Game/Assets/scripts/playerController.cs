@@ -78,17 +78,10 @@ public class playerController : MonoBehaviour {
 			if(!doubleJump && !grounded)
 				doubleJump = true;
 		}
-
+		//to fire gun after the mouse is clicked.
 		if (Input.GetButton("Fire1") && Time.time > nextFire) {
-
-
-			mouseX = Input.mousePosition.x;
-			mouseY = Input.mousePosition.y;
-			mouseZ = Input.mousePosition.z;
 			
-			Mouse = new Vector3 (mouseX, mouseY, mouseZ);
-			
-			Vector3 difference = Camera.main.ScreenToWorldPoint (Mouse) - transform.position;
+			Vector3 difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - transform.position;
 			difference.Normalize ();
 			
 			float angle = Mathf.Atan2 (difference.y, difference.x) * Mathf.Rad2Deg;
@@ -102,14 +95,20 @@ public class playerController : MonoBehaviour {
 	//function to flip the walking animation
 	void Flip() {
 		facingRight = !facingRight;
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
-
-		theScale = arm.transform.localScale;
-		theScale.x *= -1;
-		theScale.y *= -1;
-		arm.transform.localScale = theScale;
+		if (!facingRight) {
+			Quaternion theScale = transform.localRotation;
+			theScale.y = 180;
+			transform.localRotation = theScale;
+		}
+		else {
+			Quaternion theScale = transform.localRotation;
+			theScale.y = 0;
+			transform.localRotation = theScale;
+		}
+		Vector3 theArmScale = arm.transform.localScale;
+		//theScale.x *= -1;
+		theArmScale.y *= -1;
+		arm.transform.localScale = theArmScale;
 	}
 	
 }

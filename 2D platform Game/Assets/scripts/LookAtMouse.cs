@@ -6,18 +6,16 @@ public class LookAtMouse : MonoBehaviour {
 	public float rotationOffset;
 	float mouseX;
 	float mouseY;
-	float mouseZ;
-	Vector3 Mouse;
+	Vector2 Mouse;
 
 	// Update is called once per frame
 	void Update () {
 		mouseX = Input.mousePosition.x;
 		mouseY = Input.mousePosition.y;
-		mouseZ = Input.mousePosition.z;
 
-		Mouse = new Vector3 (mouseX, mouseY, mouseZ);
+		Mouse = new Vector2 (mouseX, mouseY);
 
-		Vector3 difference = Camera.main.ScreenToWorldPoint (Mouse) - transform.position;
+		Vector2 difference = Camera.main.ScreenToWorldPoint (Mouse) - transform.position;
 		difference.Normalize ();
 
 		float rotateZ = Mathf.Atan2 (difference.y, difference.x) * Mathf.Rad2Deg;
@@ -27,9 +25,9 @@ public class LookAtMouse : MonoBehaviour {
 		else if ((rotateZ * rotationOffset) > -90 && (rotateZ * rotationOffset) < -40)
 				transform.rotation = Quaternion.Euler (0f, 0f, -40f);
 		else if ((rotateZ * rotationOffset) < 120 && (rotateZ * rotationOffset) > 90)
-				transform.rotation = Quaternion.Euler (0f, 0f, -120f);
+				transform.rotation = Quaternion.Euler (0f, 0f, 120f);
 		else if ((rotateZ * rotationOffset) < -90 && (rotateZ * rotationOffset) > -140)
-				transform.rotation = Quaternion.Euler (0f, 0f, 140f);
+				transform.rotation = Quaternion.Euler (0f, 0f, -140f);
 		else
 			    transform.rotation = Quaternion.Euler (0f, 0f, rotateZ * rotationOffset);
 	}
