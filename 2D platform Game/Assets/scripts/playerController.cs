@@ -31,6 +31,8 @@ public class playerController : MonoBehaviour {
 	void Start() {
 		//gets the animator
 		anim = GetComponent <Animator> ();
+		anim.SetBool ("FacingRight", facingRight);
+
 	}
 
 	void FixedUpdate() {
@@ -95,6 +97,7 @@ public class playerController : MonoBehaviour {
 	//function to flip the walking animation
 	void Flip() {
 		facingRight = !facingRight;
+		anim.SetBool ("FacingRight", facingRight);
 		if (!facingRight) {
 			Quaternion theScale = transform.localRotation;
 			theScale.y = 180;
