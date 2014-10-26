@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/DestroyByContact.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/MovingPlatform.cs">
     <Files>
-      <File FileName="Assets/scripts/DestroyByContact.cs" Line="33" Column="40" />
+      <File FileName="Assets/scripts/DestroyByContact.cs" Line="32" Column="4" />
+      <File FileName="Assets/scripts/MovingPlatform.cs" Line="29" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
