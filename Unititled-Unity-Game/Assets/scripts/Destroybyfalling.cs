@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Destroybyfalling : MonoBehaviour {
 
-	void OnTriggerExit(Collider2D other){
+	void OnTriggerExit2D(Collider2D other){
 		Destroy(other.gameObject);
 	}
 
