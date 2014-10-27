@@ -49,11 +49,12 @@
      <Compile Include="Assets\scripts\BulletSpeed.cs" />
      <Compile Include="Assets\scripts\CameraController.cs" />
      <Compile Include="Assets\scripts\DestroyByContact.cs" />
-     <Compile Include="Assets\scripts\Destroybyfalling.cs" />
+     <Compile Include="Assets\scripts\DestroybyFalling.cs" />
      <Compile Include="Assets\scripts\GameController.cs" />
      <Compile Include="Assets\scripts\HealthBar.cs" />
      <Compile Include="Assets\scripts\LookAtMouse.cs" />
      <Compile Include="Assets\scripts\MovingPlatform.cs" />
+     <Compile Include="Assets\scripts\NextLevel.cs" />
      <Compile Include="Assets\scripts\playerController.cs" />
      <Compile Include="Assets\scripts\testArm.cs" />
   </ItemGroup>
