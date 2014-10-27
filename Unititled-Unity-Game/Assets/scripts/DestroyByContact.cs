@@ -3,10 +3,10 @@ using System.Collections;
 
 public class DestroyByContact : MonoBehaviour {
 
-	public GameObject explosion;
+	/*public GameObject explosion;
 	public GameObject playerExplosion;
 	public int scoreValue;
-	private GameController gameController;
+	private gameController;
 
 	void Start()
 	{
@@ -32,6 +32,6 @@ public class DestroyByContact : MonoBehaviour {
 		}
 		Destroy(other.gameObject);
 		Destroy(gameObject);
-	}
+	}*/
 
 }
