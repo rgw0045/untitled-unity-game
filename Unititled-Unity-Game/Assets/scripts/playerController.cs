@@ -113,5 +113,4 @@ public class playerController : MonoBehaviour {
 		theArmScale.y *= -1;
 		arm.transform.localScale = theArmScale;
 	}
-	
 }
