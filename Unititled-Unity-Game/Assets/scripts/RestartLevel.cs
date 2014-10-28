@@ -8,5 +8,7 @@ public class RestartLevel : MonoBehaviour {
 
 		if(GUI.Button (new Rect((Screen.width/2)+10, (Screen.height/2)+30, 80, 20), "First Level"))
 		               Application.LoadLevel(0);
+		if(GUI.Button (new Rect((Screen.width/2)+10, (Screen.height/2)+60, 80, 20), "Exit"))
+			Application.Quit();
 	}
 }
