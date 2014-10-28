@@ -21,6 +21,7 @@ public class Menu : MonoBehaviour {
 		}
 		if(GUI.Button (new Rect(Screen.width * .25f, Screen.height *.75f, Screen.width *.5f, Screen.height *.1f), "Exit"))
 		{
+			Application.Quit();
 			//debug
 			print("Clicked Exit");
 		}
