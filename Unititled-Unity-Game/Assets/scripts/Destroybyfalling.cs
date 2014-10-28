@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestroybyFalling : MonoBehaviour {
+public class Destroybyfalling : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D other){
 		if (other.tag == "Player") 

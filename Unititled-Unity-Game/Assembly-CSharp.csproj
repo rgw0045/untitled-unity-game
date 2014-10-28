@@ -56,11 +56,8 @@
      <Compile Include="Assets\scripts\LookAtPlayer.cs" />
      <Compile Include="Assets\scripts\MovingPlatform.cs" />
      <Compile Include="Assets\scripts\NextLevel.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\scripts\enemyBulletController.cs" />
-=======
      <Compile Include="Assets\scripts\RestartLevel.cs" />
->>>>>>> origin/master
+     <Compile Include="Assets\scripts\enemyBulletController.cs" />
      <Compile Include="Assets\scripts\enemyController.cs" />
      <Compile Include="Assets\scripts\playerBulletController.cs" />
      <Compile Include="Assets\scripts\playerController.cs" />
