@@ -7,10 +7,10 @@ public class enemyController : MonoBehaviour {
 	bool facingRight = true;
 
 	public GameObject arm;
-	float mouseX;
-	float mouseY;
-	float mouseZ;
-	Vector3 Mouse;
+	float playerX;
+	float playerY;
+	float playerZ;
+	Vector3 Player;
 
 	public GameObject shot;
 	public Transform shotSpawn;
@@ -46,12 +46,8 @@ public class enemyController : MonoBehaviour {
 		//jumping animation
 		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
 
-		//cant move while jumping
-		//if (!grounded)
-		//	return;
-
 		//gets input to move the character
-		float move = Input.GetAxis ("Horizontal");
+		float move = 0;
 
 		//gets the speed for the animator
 		anim.SetFloat ("speed", move);
@@ -59,41 +55,23 @@ public class enemyController : MonoBehaviour {
 		//moves charactor
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 
-		mouseX = Camera.main.ScreenToWorldPoint (Input.mousePosition).x - transform.position.x;
+		playerX = GameObject.Find("Player").transform.position.x - transform.position.x;
 
 		//if moving left and not facing right, flip
-		if (mouseX > 0 && !facingRight) {
+		if (playerX > 0 && !facingRight) {
 			Flip ();
 		}
 		//if moving left and not facing left, flip
-		else if (mouseX < 0 && facingRight) {
+		else if (playerX < 0 && facingRight) {
 			Flip ();
 		}
 	}
 
 	void Update() {
-		//to jump and after pressing the spacebar
-		if ((grounded || !doubleJump) && Input.GetKeyDown (KeyCode.Space)) {
-			anim.SetBool("Ground", false);
-			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 
-			if(!doubleJump && !grounded)
-				doubleJump = true;
-		}
-		//to fire gun after the mouse is clicked.
-		if (Input.GetButton("Fire1") && Time.time > nextFire) {
-			
-			Vector3 difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - transform.position;
-			difference.Normalize ();
-			
-			float angle = Mathf.Atan2 (difference.y, difference.x) * Mathf.Rad2Deg;
-
-			if ((angle > -40 && angle < 60) || (angle > 120 || angle < -140)) {
-			  nextFire = Time.time + fireRate;
-			  Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-			}
-	    }
 	}
+
+	
 	//function to flip the walking animation
 	void Flip() {
 		facingRight = !facingRight;
