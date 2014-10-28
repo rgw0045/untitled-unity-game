@@ -5,7 +5,7 @@ public class KillBullets : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 
-		if (other.tag == "PlayerBullet" || other.tag == "EnemyBullet")
+		if (other.tag == "Bullet")
 		  Destroy (other.gameObject);
 	}
 
