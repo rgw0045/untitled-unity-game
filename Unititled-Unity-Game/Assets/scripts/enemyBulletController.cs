@@ -28,4 +28,13 @@ public class enemyBulletController : MonoBehaviour {
 		distance = vector.magnitude;
 		if (distance >= range) Destroy(this.gameObject);
 	}
+
+	void OnTriggerEnter2D(Collider2D coll) {
+		
+		if(coll.gameObject.tag == "Player") {
+			Destroy(this.gameObject);
+			coll.gameObject.SendMessage("AdjustcurHealth", -10);
+		}
+		
+	}
 }
