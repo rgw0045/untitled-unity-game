@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../Desktop/Space Shooter/Assets/Scrpts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/NewCameraController.cs">
     <Files>
-      <File FileName="../../../Desktop/Space Shooter/Assets/Scrpts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/NewCameraController.cs" Line="19" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
