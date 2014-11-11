@@ -2,36 +2,13 @@
 using System.Collections;
 
 public class DestroyByContact : MonoBehaviour {
+	
 
-	/*public GameObject explosion;
-	public GameObject playerExplosion;
-	public int scoreValue;
-	private gameController;
+	void OnTriggerEnter2D(Collider2D other) {
 
-	void Start()
-	{
-		GameObject gameControllerObject = GameObject.FindWithTag("GameController");
-		if (gameControllerObject != null) 
-		{
-			gameController = gameControllerObject.GetComponent<GameController>();		
-		}
-
-		if (gameController == null) 
-		{
-			Debug.Log("Cannot Find 'GameController' Script!");		
+		if (other.tag == "Player") {
+			Application.LoadLevel("DeathScene");
 		}
 	}
-
-	void OnTriggerEnter(Collider other) {
-		if (other.tag == "Boundary") {
-			return;		
-		}
-		Instantiate (explosion, transform.position, transform.rotation);
-		if (other.tag == "Player") {
-			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-		}
-		Destroy(other.gameObject);
-		Destroy(gameObject);
-	}*/
 
 }
