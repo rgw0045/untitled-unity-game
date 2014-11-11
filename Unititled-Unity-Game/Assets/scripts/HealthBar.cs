@@ -2,15 +2,16 @@
 using System.Collections;
 
 public class HealthBar : MonoBehaviour {
-	private static int maxHealth = 500;
-	public int curHealth = 250;
+	private static int maxHealth = 250;
+	public static int curHealth = 250;
 	private float healthBarLenght;
-	private GUIStyle currentStyle = null;
+	private GUIStyle HealthBarStyle = null;
+	private GUIStyle HealthBoxStyle = null;
 
 
 	// Use this for initialization
 	void Start () {
-		healthBarLenght = Screen.width / 2;
+		healthBarLenght = Screen.width / 4;
 	}
 	
 	// Update is called once per frame
@@ -21,14 +22,19 @@ public class HealthBar : MonoBehaviour {
 	//make the box for the health bar
 	void OnGUI() {
 		InitStyle ();
-		GUI.Box (new Rect(10, 10, healthBarLenght, 20), "curHealth", currentStyle);
+		GUI.Box (new Rect (5, 5, (Screen.width / 4)+10, 45), "Health", HealthBoxStyle);
+		GUI.Box (new Rect(10, 25, healthBarLenght, 20),"", HealthBarStyle);
 	}
 
 	private void InitStyle() {
-		  if (currentStyle == null) {
-			currentStyle = new GUIStyle( GUI.skin.box);
-			currentStyle.normal.background = MakeTex(2,2,new Color ( 0.0f, 0.4f, 0.0f, 0.5f));
+		  if (HealthBarStyle == null) {
+			HealthBarStyle = new GUIStyle( GUI.skin.box);
+			HealthBarStyle.normal.background = MakeTex(2,2,new Color ( 0.0f, 0.4f, 0.0f, 0.5f));
 		  }
+		if (HealthBoxStyle == null) {
+			HealthBoxStyle = new GUIStyle(GUI.skin.box);
+			HealthBoxStyle.normal.background = MakeTex (2,2,new Color(0.0f,0.0f,0.0f,1.0f));
+		}
 	}
 
 	private Texture2D MakeTex(int width, int height, Color col) {
@@ -46,7 +52,7 @@ public class HealthBar : MonoBehaviour {
 		curHealth += adj;
 
 		if (curHealth < 0) {
-			curHealth = 0;
+			curHealth = 250;
 			Application.LoadLevel ("DeathScene");
 		}
 		if (curHealth > maxHealth)
@@ -54,6 +60,6 @@ public class HealthBar : MonoBehaviour {
 		if (maxHealth < 1)
 			maxHealth = 1;
 
-		healthBarLenght = (Screen.width / 2) * (curHealth / (float)maxHealth);
+		healthBarLenght = (Screen.width / 4) * (curHealth / (float)maxHealth);
 	}
 }

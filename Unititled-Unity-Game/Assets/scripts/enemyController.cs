@@ -5,6 +5,8 @@ public class enemyController : MonoBehaviour {
 	//variables for moving
 	public float maxSpeed = 10f;
 	bool facingRight = true;
+	public float maxHealth = 100;
+	float curHealth;
 
 	public GameObject arm;
 	float playerX;
@@ -32,7 +34,7 @@ public class enemyController : MonoBehaviour {
 		//gets the animator
 		anim = GetComponent <Animator> ();
 		anim.SetBool ("FacingRight", facingRight);
-
+		curHealth = maxHealth;
 	}
 
 	void FixedUpdate() {
@@ -68,7 +70,9 @@ public class enemyController : MonoBehaviour {
 	}
 
 	void Update() {
-
+		if (curHealth <= 0) {
+			Destroy (this.gameObject);
+		}
 	}
 
 	
@@ -91,4 +95,7 @@ public class enemyController : MonoBehaviour {
 		theArmScale.y *= -1;
 		arm.transform.localScale = theArmScale;
 	}
+	public void AdjustcurHealth(int adj) {
+				curHealth += adj;
+		}
 }
