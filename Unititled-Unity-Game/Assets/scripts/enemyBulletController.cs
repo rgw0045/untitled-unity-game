@@ -4,6 +4,7 @@ using System.Collections;
 public class enemyBulletController : MonoBehaviour {
 	public float speed;
 	public float range;
+	HealthBar health;
 
 	Vector3 startPosition;
 	Vector2 vector;
@@ -33,6 +34,7 @@ public class enemyBulletController : MonoBehaviour {
 		
 		if(coll.gameObject.tag == "Player") {
 			Destroy(this.gameObject);
+
 			coll.gameObject.SendMessage("AdjustcurHealth", -10);
 		}
 		
