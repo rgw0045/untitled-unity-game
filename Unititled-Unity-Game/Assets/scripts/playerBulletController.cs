@@ -13,6 +13,7 @@ public class playerBulletController : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		audio.Play ();
 		startPosition = transform.position;
 		
 		target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
