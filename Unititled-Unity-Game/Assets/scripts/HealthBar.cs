@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class HealthBar : MonoBehaviour {
-	private static int maxHealth = 250;
+	public static int maxHealth = 250;
 	public static int curHealth = 250;
 	private float healthBarLenght;
 	private GUIStyle HealthBarStyle = null;
@@ -52,7 +52,7 @@ public class HealthBar : MonoBehaviour {
 		curHealth += adj;
 
 		if (curHealth < 0) {
-			curHealth = 250;
+			curHealth = 0;
 			Application.LoadLevel ("DeathScene");
 		}
 		if (curHealth > maxHealth)
