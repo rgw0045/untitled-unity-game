@@ -28,6 +28,8 @@ public class enemyController : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 700f;
 
+	private int scoreValue = 50;
+
 	bool doubleJump = false;
 
 	void Start() {
@@ -72,6 +74,7 @@ public class enemyController : MonoBehaviour {
 	void Update() {
 		if (curHealth <= 0) {
 			Destroy (this.gameObject);
+			ScoreKeeper.Addscore(scoreValue);
 		}
 	}
 
