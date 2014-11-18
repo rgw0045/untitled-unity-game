@@ -3,13 +3,25 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	public GameObject player;
+	public GUIText scoreText;
+	private int score;
 	
+	void Start(){
+		
+		DontDestroyOnLoad (player);
+		score = 0;
+		UpdateScore ();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	public void Addscore(int modifier){
+		
+		score += modifier;
+		UpdateScore ();
+	}
 	
+	void UpdateScore(){
+		
+		scoreText.text = "Score: " + score;
 	}
 }

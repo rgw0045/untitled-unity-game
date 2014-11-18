@@ -28,7 +28,9 @@ public class enemyController : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 700f;
 
-	private int scoreValue = 50;
+	//score related things
+//	private int scoreValue = 50;
+//	private GameController scorekeeper;
 
 	bool doubleJump = false;
 
@@ -37,6 +39,7 @@ public class enemyController : MonoBehaviour {
 		anim = GetComponent <Animator> ();
 		anim.SetBool ("FacingRight", facingRight);
 		curHealth = maxHealth;
+
 	}
 
 	void FixedUpdate() {
@@ -74,7 +77,7 @@ public class enemyController : MonoBehaviour {
 	void Update() {
 		if (curHealth <= 0) {
 			Destroy (this.gameObject);
-			ScoreKeeper.Addscore(scoreValue);
+//			ScoreKeeper.Addscore(scoreValue);
 		}
 	}
 
