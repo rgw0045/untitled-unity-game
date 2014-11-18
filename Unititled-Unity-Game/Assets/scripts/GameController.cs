@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
 	
 	void Start(){
 		
-		DontDestroyOnLoad (player);
+		//DontDestroyOnLoad (player);
 		score = 0;
 		UpdateScore ();
 	}
