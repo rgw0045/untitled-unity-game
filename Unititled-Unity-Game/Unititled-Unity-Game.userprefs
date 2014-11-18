@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="../../../Desktop/Space Shooter/Assets/Scrpts/DestroyByContact.cs">
     <Files>
       <File FileName="../../../Desktop/Space Shooter/Assets/Scrpts/GameController.cs" Line="17" Column="24" />
       <File FileName="../../../Desktop/Space Shooter/Assets/Scrpts/DestroyByContact.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/ScoreKeeper.cs" Line="28" Column="2" />
+      <File FileName="Assets/scripts/enemyController.cs" Line="73" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
