@@ -113,4 +113,8 @@ public class playerController : MonoBehaviour {
 		theArmScale.y *= -1;
 		arm.transform.localScale = theArmScale;
 	}
+	void OnTriggerEnter2D(Collider2D coll) {
+		  if (coll.tag == "Bullet") 
+						audio.Play ();
+		}
 }
