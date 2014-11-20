@@ -3,6 +3,10 @@ using System.Collections;
 
 public class RestartLevel : MonoBehaviour {
 
+	void Start() {
+		audio.Play ();
+	}
+
    void OnGUI() {
 		GUI.Box (new Rect (Screen.width / 2, Screen.height / 2, 100, 90), "Restart");
 
