@@ -82,16 +82,8 @@ public class playerController : MonoBehaviour {
 		}
 		//to fire gun after the mouse is clicked.
 		if (Input.GetButton("Fire1") && Time.time > nextFire) {
-			
-			Vector3 difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - transform.position;
-			difference.Normalize ();
-			
-			float angle = Mathf.Atan2 (difference.y, difference.x) * Mathf.Rad2Deg;
-
-			if ((angle > -40 && angle < 60) || (angle > 120 || angle < -140)) {
 			  nextFire = Time.time + fireRate;
 			  Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-			}
 	    }
 	}
 	//function to flip the walking animation
