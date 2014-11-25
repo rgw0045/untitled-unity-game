@@ -81,7 +81,7 @@ public class enemyController : MonoBehaviour {
 		rigidbody2D.velocity = new Vector2 (maxSpeed * enemy.localScale.x, rigidbody2D.velocity.y);
 	}
 
-	float curHealth;
+	float curHealth = 100.0f;
 	public void AdjustcurHealth(int adj) {
 		curHealth += adj;
 		if (curHealth <= 0) Destroy (this.gameObject);
