@@ -36,8 +36,11 @@ public class enemyController : MonoBehaviour {
 		// get the player's position relative to this enemy's position
 		Vector2 playerRelPos = Vector2.Scale(player.position - enemy.position, enemy.localScale);
 		
+		// check if veiw of the player is blocked
+		bool viewBlocked = Physics2D.Linecast(enemy.position, player.position, LayerMask.GetMask("Walls") + 1).transform;
+		
 		// if the player is in front and is in range attack the player
-		if (playerRelPos.x > 0.0f && playerRelPos.magnitude < attackRange) attack(playerRelPos);
+		if (playerRelPos.x > 0.0f && playerRelPos.magnitude < attackRange && !viewBlocked) attack(playerRelPos);
 		else patrol();
 		
 		// set animation states
@@ -78,7 +81,7 @@ public class enemyController : MonoBehaviour {
 		rigidbody2D.velocity = new Vector2 (maxSpeed * enemy.localScale.x, rigidbody2D.velocity.y);
 	}
 
-	float curHealth;
+	float curHealth = 100.0f;
 	public void AdjustcurHealth(int adj) {
 		curHealth += adj;
 		if (curHealth <= 0) Destroy (this.gameObject);

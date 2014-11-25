@@ -63,6 +63,7 @@
      <Compile Include="Assets\scripts\TestCamera.cs" />
      <Compile Include="Assets\scripts\enemyBulletController.cs" />
      <Compile Include="Assets\scripts\enemyController.cs" />
+     <Compile Include="Assets\scripts\newEnemyController.cs" />
      <Compile Include="Assets\scripts\playerBulletController.cs" />
      <Compile Include="Assets\scripts\playerController.cs" />
      <Compile Include="Assets\scripts\testArm.cs" />
