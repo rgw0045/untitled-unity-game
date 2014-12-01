@@ -75,6 +75,10 @@ public class playerController : MonoBehaviour {
 		//to jump and after pressing the spacebar
 		if ((grounded || !doubleJump) && Input.GetKeyDown (KeyCode.Space)) {
 			anim.SetBool("Ground", false);
+			//if(rigidbody2D.velocity.y < 0)
+			//{
+				rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
+			//}
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 
 			if(!doubleJump && !grounded)
