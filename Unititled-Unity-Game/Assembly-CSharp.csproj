@@ -61,6 +61,7 @@
      <Compile Include="Assets\scripts\NextLevel.cs" />
      <Compile Include="Assets\scripts\RestartLevel.cs" />
      <Compile Include="Assets\scripts\TestCamera.cs" />
+     <Compile Include="Assets\scripts\TextScript.cs" />
      <Compile Include="Assets\scripts\enemyBulletController.cs" />
      <Compile Include="Assets\scripts\enemyController.cs" />
      <Compile Include="Assets\scripts\playerBulletController.cs" />

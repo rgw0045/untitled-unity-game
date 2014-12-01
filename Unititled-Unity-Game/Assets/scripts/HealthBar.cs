@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class HealthBar : MonoBehaviour {
+	public GameObject gameController;
+	public GameObject displayText;
 	public static int maxHealth = 250;
 	public static int curHealth = 250;
 	private float healthBarLenght;
@@ -53,6 +55,8 @@ public class HealthBar : MonoBehaviour {
 
 		if (curHealth < 0) {
 			curHealth = 0;
+			Destroy(gameController);
+			Destroy(displayText);
 			Application.LoadLevel ("DeathScene");
 		}
 		if (curHealth > maxHealth)

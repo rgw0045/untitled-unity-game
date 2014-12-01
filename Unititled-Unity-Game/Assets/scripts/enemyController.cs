@@ -18,6 +18,9 @@ public class enemyController : MonoBehaviour {
 	float nextFire = 0.0f;
 	float groundRadius = 0.2f;
 	float maxSpeed = 1.0f;
+
+	private GameController gameController;
+	private int scoreValue = 100;
 	
 	void Start () {
 		animator = GetComponent <Animator> ();
@@ -30,6 +33,14 @@ public class enemyController : MonoBehaviour {
 		forwardGroundCheck = enemy.Find("ForwardGroundCheck");
 		forwardWallCheck = enemy.Find("ForwardWallCheck");
 		enemyBullet = Resources.Load("EnemyBullet");
+
+		//Find GameController 
+		GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+		if (gameControllerObject != null)
+						gameController = gameControllerObject.GetComponent<GameController> ();
+
+		if(gameControllerObject == null)
+			Debug.Log("Cannot Find 'GameController' Object");
 	}
 	
 	void FixedUpdate () {
@@ -84,6 +95,9 @@ public class enemyController : MonoBehaviour {
 	float curHealth = 100.0f;
 	public void AdjustcurHealth(int adj) {
 		curHealth += adj;
-		if (curHealth <= 0) Destroy (this.gameObject);
+		if (curHealth <= 0) {
+			Destroy (this.gameObject);
+			gameController.Addscore(scoreValue);
+		}
 	}
 }
