@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 
-	public GameObject player;
+	public GameObject controller;
 	public GUIText scoreText;
 	public GUIText timeText;
 	private int score;
@@ -12,17 +12,17 @@ public class GameController : MonoBehaviour {
 	
 	void Start(){
 		
-		//DontDestroyOnLoad (player);
+		DontDestroyOnLoad (controller);
 		score = 0;
 		startTime = Time.time;
 		UpdateScore ();
-		UpdateTime ();
+		timeText.text = "Time: " + stageTime;
 	}
 
 	void Update(){
 
-		stageTime = Time.time - stageTime;
-		UpdateTime ();
+		stageTime = Time.time - startTime;
+		timeText.text = "Time: " + stageTime;
 	}
 	
 	public void Addscore(int modifier){
@@ -36,8 +36,5 @@ public class GameController : MonoBehaviour {
 		scoreText.text = "Score: " + score;
 	}
 
-	void UpdateTime(){
 
-		timeText.text = "Time: " + stageTime;
-	}
 }
