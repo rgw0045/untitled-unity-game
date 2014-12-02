@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BossController : MonoBehaviour {
 
+	public bool teleport;
+
 	Animator animator;
 	LayerMask whatIsGround;
 	Object BossBullet;
@@ -79,15 +81,20 @@ public class BossController : MonoBehaviour {
 		bool forwardWalled =  Physics2D.OverlapCircle (forwardWallCheck.position, groundRadius, whatIsGround);
 		if (grounded && (!forwardGrounded || forwardWalled)) boss.localScale = new Vector2(boss.localScale.x * -1, boss.localScale.y);
 
-		//for the boss to randomly teleport
-		if(Random.Range(0, 100)  == 5) {
-		  Vector3 playerPosRandomized = player.transform.position;
-		  playerPosRandomized.x = playerPosRandomized.x + Random.Range (-10.0f, 10.0f);
-		  playerPosRandomized.y = playerPosRandomized.y + Random.Range (1.0f, 10.0f);
-		  boss.transform.position = playerPosRandomized;
-		}
-		// walk forward
-		//rigidbody2D.velocity = new Vector2 (maxSpeed * boss.localScale.x, rigidbody2D.velocity.y);
+		if (teleport) {
+						//for the boss to randomly teleport
+						if (Random.Range (0, 100) == 5) {
+								Vector3 playerPosRandomized = player.transform.position;
+								playerPosRandomized.x = playerPosRandomized.x + Random.Range (-10.0f, 10.0f);
+								playerPosRandomized.y = playerPosRandomized.y + Random.Range (1.0f, 10.0f);
+								boss.transform.position = playerPosRandomized;
+				boss.localScale = new Vector2(boss.localScale.x * -1, boss.localScale.y);
+						}
+				}
+		else {
+						// walk forward
+						rigidbody2D.velocity = new Vector2 (maxSpeed * boss.localScale.x, rigidbody2D.velocity.y);
+				}
 	}
 
 
