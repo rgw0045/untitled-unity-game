@@ -52,6 +52,7 @@
      <Compile Include="Assets\scripts\DeathSceneTransition.cs" />
      <Compile Include="Assets\scripts\DestroyByContact.cs" />
      <Compile Include="Assets\scripts\Destroybyfalling.cs" />
+     <Compile Include="Assets\scripts\DoorController.cs" />
      <Compile Include="Assets\scripts\DoorOminousLeft.cs" />
      <Compile Include="Assets\scripts\DoorOminousRight.cs" />
      <Compile Include="Assets\scripts\GameController.cs" />

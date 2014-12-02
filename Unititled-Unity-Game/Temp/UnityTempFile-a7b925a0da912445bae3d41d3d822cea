@@ -38,10 +38,15 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
+'Assets/scripts/BacktoMainMenuLeft.cs'
+'Assets/scripts/BacktoMainMenuRight.cs'
 'Assets/scripts/CameraController.cs'
 'Assets/scripts/DeathSceneTransition.cs'
 'Assets/scripts/DestroyByContact.cs'
 'Assets/scripts/Destroybyfalling.cs'
+'Assets/scripts/DoorController.cs'
+'Assets/scripts/DoorOminousLeft.cs'
+'Assets/scripts/DoorOminousRight.cs'
 'Assets/scripts/GameController.cs'
 'Assets/scripts/HealthBar.cs'
 'Assets/scripts/KillBullets.cs'
@@ -51,8 +56,11 @@
 'Assets/scripts/MovingPlatform.cs'
 'Assets/scripts/NewCameraController.cs'
 'Assets/scripts/NextLevel.cs'
+'Assets/scripts/QuitGameDoor.cs'
 'Assets/scripts/RestartLevel.cs'
+'Assets/scripts/StartLevel.cs'
 'Assets/scripts/TestCamera.cs'
+'Assets/scripts/TextScript.cs'
 'Assets/scripts/enemyBulletController.cs'
 'Assets/scripts/enemyController.cs'
 'Assets/scripts/playerBulletController.cs'
