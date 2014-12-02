@@ -39,6 +39,11 @@ public class BossController : MonoBehaviour {
 		BossBullet = Resources.Load("BossCar");
 	}
 
+	void Update() {
+		boss.localRotation = new Quaternion (0.0f, 0.0f, 0.0f, 0.0f);
+
+		}
+
 	void FixedUpdate() {
 		// get the player's position relative to this enemy's position
 		playerRelPos = Vector2.Scale(player.position - boss.position, boss.localScale);
@@ -88,7 +93,7 @@ public class BossController : MonoBehaviour {
 								playerPosRandomized.x = playerPosRandomized.x + Random.Range (-10.0f, 10.0f);
 								playerPosRandomized.y = playerPosRandomized.y + Random.Range (1.0f, 10.0f);
 								boss.transform.position = playerPosRandomized;
-				boss.localScale = new Vector2(boss.localScale.x * -1, boss.localScale.y);
+				                boss.localScale = new Vector2(boss.localScale.x * -1, boss.localScale.y);
 						}
 				}
 		else {

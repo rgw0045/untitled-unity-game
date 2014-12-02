@@ -4,7 +4,6 @@ using System.Collections;
 public class EnemiesLeft : MonoBehaviour {
 
 	int enemiesLeft = 0;
-	bool killedAllEnemies = false;
 
 	// Use this for initialization
 	void Start () {
