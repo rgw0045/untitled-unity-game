@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\scripts\BacktoMainMenuLeft.cs" />
      <Compile Include="Assets\scripts\BacktoMainMenuRight.cs" />
+     <Compile Include="Assets\scripts\BossBulletController.cs" />
+     <Compile Include="Assets\scripts\BossController.cs" />
      <Compile Include="Assets\scripts\CameraController.cs" />
      <Compile Include="Assets\scripts\DeathSceneTransition.cs" />
      <Compile Include="Assets\scripts\DestroyByContact.cs" />
