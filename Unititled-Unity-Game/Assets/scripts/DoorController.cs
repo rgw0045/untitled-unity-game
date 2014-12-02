@@ -5,9 +5,8 @@ public class DoorController : MonoBehaviour {
 	Animator animator;
 	Transform door;
 	Transform player;
-
-	public float playerRange;
 	
+	bool playerInRange = false;
 	float openRange = 10.0f;
 
 	// Use this for initialization
@@ -18,12 +17,16 @@ public class DoorController : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-		playerRange = Vector2.Scale(player.position - door.position, door.localScale).magnitude;
-		animator.SetBool ("playerInRange", playerRange <= openRange);
+		float playerRange = Vector2.Scale(player.position - door.position, door.localScale).magnitude;
+		
+		if ((playerRange <= openRange) != playerInRange) {
+			audio.Play();
+			playerInRange = playerRange <= openRange;
+		}
+		
+		animator.SetBool ("playerInRange", playerInRange);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	void playSound () {
 	}
 }
