@@ -7,6 +7,7 @@ public class RestartLevel : MonoBehaviour {
 		GUI.Box (new Rect (Screen.width / 2, Screen.height / 2 - 30, 100, 120), "Death");
 
 		if (GUI.Button (new Rect ((Screen.width / 2) + 10, (Screen.height / 2) + 0, 80, 20), "Menu")) {
+			HealthBar.curHealth = HealthBar.maxHealth;
 			Application.LoadLevel ("Title_Menu");
 		}
 
