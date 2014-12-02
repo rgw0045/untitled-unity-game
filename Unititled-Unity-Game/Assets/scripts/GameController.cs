@@ -11,7 +11,9 @@ public class GameController : MonoBehaviour {
 	private float stageTime;
 	
 	void Start(){
-		
+		//GameObject displayText = GameObject.Find ("Display Text");
+		scoreText = GameObject.Find ("/Display Text/Score Text").GetComponent<GUIText>();
+		timeText = GameObject.Find ("/Display Text/TIme Text").GetComponent<GUIText>();
 		DontDestroyOnLoad (controller);
 		score = 0;
 		startTime = Time.time;

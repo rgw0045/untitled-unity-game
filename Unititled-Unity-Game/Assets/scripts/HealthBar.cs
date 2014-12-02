@@ -13,6 +13,8 @@ public class HealthBar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		displayText = GameObject.Find ("Display Text");
+		gameController = GameObject.Find ("GameController");
 		healthBarLenght = Screen.width / 4;
 	}
 	
