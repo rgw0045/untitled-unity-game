@@ -83,15 +83,15 @@ public class BossController : MonoBehaviour {
 		if(Random.Range(0, 100)  == 5) {
 		  Vector3 playerPosRandomized = player.transform.position;
 		  playerPosRandomized.x = playerPosRandomized.x + Random.Range (-10.0f, 10.0f);
-		  playerPosRandomized.y = playerPosRandomized.y + Random.Range (-10.0f, 10.0f);
+		  playerPosRandomized.y = playerPosRandomized.y + Random.Range (1.0f, 10.0f);
 		  boss.transform.position = playerPosRandomized;
 		}
 		// walk forward
-		rigidbody2D.velocity = new Vector2 (maxSpeed * boss.localScale.x, rigidbody2D.velocity.y);
+		//rigidbody2D.velocity = new Vector2 (maxSpeed * boss.localScale.x, rigidbody2D.velocity.y);
 	}
 
 
-	float curHealth = 500.0f;
+	float curHealth = 250.0f;
 	public void AdjustcurHealth(int adj) {
 		curHealth += adj;
 		if (curHealth <= 0) Destroy (this.gameObject);
